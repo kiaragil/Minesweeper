@@ -1,6 +1,6 @@
 import de.bezier.guido.*;
-public  int YROWS = 27;
-public  int XCOL = 27;
+public  int YROWS = 30;
+public  int XCOL = 30;
 private MSButton[][] buttons; //2d array of minesweeper buttons
 private ArrayList <MSButton> bombs = new ArrayList <MSButton>(); 
 private ArrayList <MSButton> messageSpace = new ArrayList <MSButton>(); 
@@ -160,8 +160,8 @@ public class MSButton{
     }
 
     if (gameOver && !win){
-      fill(255);
-      text(label, x+width/2, y+height/2);
+        fill(255);
+        text(label, x+width/2, y+height/2);
     } 
 
     else if (!gameOver && win){
@@ -170,6 +170,7 @@ public class MSButton{
     } 
 
     else{
+      
       fill(225,255,200);
       text(label, x+width/2, y+height/2);
     }
@@ -186,6 +187,7 @@ public class MSButton{
 
     return false;
   }
+  
   public int countBombs(int row, int col){
     int numBombs = 0;
 
