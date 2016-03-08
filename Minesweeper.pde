@@ -161,18 +161,18 @@ public class MSButton{
 
     if (gameOver && !win){
         fill(255);
-        text(label, x+width/2, y+height/2);
+        text(label, x+width/2, y+height);
     } 
 
     else if (!gameOver && win){
       fill(100, 255, 246);
-      text(label, x+ width/4, y+height/2);
+      text(label, x+ width/4, y+height);
     } 
 
     else{
       
       fill(225,255,200);
-      text(label, x+width/2, y+height/2);
+      text(label, x+width/2, y+height);
     }
 
   }
